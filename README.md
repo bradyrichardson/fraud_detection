@@ -80,7 +80,7 @@ Analyzed relationships between features and fraudulent transactions:
 | `ratio_to_median_purchase_price` | 38% of frauds have unusually high purchase ratios |
 | `online_order` | 95% of frauds were online transactions |
 | `used_pin_number` | Less than 1% of frauds used PIN |
-| `used_chip` | ~25% of frauds used a chip (possible data inconsistency) |
+| `used_chip` | ~25% of frauds used a chip (possible data inconsistency or chip includes credit card purchase per the kaggle data) |
 
 ### Visualization Examples
 - 📦 Boxplots for distance and ratio features  
@@ -160,18 +160,6 @@ Visualization of training loss over epochs shows **consistent convergence**, sug
 - 🧠 scikit-learn  
 - ⚖️ imbalanced-learn  
 - 📦 KaggleHub  
-
----
-
-## 📂 File Structure
-```
-fraud-detection/
-│
-├── fraud_detection.ipynb       # Main notebook (EDA + model training)
-├── README.md                   # Project documentation
-├── card_transdata.csv          # Dataset (if downloaded manually)
-└── requirements.txt            # List of dependencies
-```
 
 ---
 
